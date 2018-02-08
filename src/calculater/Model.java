@@ -12,37 +12,34 @@ public class Model {
 	     */
 	    
 	    }
-
+	    public boolean flag = false;
 	    public double add(double x, double y){
+	    	flag= true;
 	        return x+y;
 	        }
 	        
-	    private double sub(double x, double y){
+	    public double sub(double x, double y){
+	    	flag= true;
 	        return x-y;
 	        }
 	    
-	    private double mul(double x, double y){
+	    public double mul(double x, double y){
+	    	flag= true;
 	        return x*y;
 	        }
 	    
-	    private double div(double x, double y){
-	        double z;
-	        try{
-	           z=x/y;
-	        }
-	        catch(Exception divideonzero){
-	            System.out.println(" DIVIDE ON ZERO NOT ALLWED !!!");
-	        }
-	        return x/y;
+	    public double div(double x, double y){
+	    	flag= true;
+	           return x/y;
+	    }
+	    
+	    public double mod(double x,double y){
+	    	flag= true;
+	        return x%y;
 	        }
 	    
-	    private double mod(double x, double y){
-	        double z = div(x,y);
-	        
-	        return x+y;
-	        }
-	    
-	    private double sqrroot(double x, double y){
-	        return x+y;
+	    public double sqrroot(double x){
+	    	flag= true;
+	        return Math.sqrt(x);
 	        }
 	}
