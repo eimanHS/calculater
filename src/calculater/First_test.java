@@ -33,9 +33,10 @@ class First_test {
 	void tearDown() throws Exception {
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	void test() {
-	test();
+	assertEquals(5,m1.add(3,2));
 	}
 
 }
