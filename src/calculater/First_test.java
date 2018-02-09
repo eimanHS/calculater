@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 
 class First_test {
 	Controler c1 ;
-	Model m;
+	Model m1;
 	
 	
 	
@@ -26,7 +26,7 @@ class First_test {
 	@BeforeEach
 	void setUp() throws Exception {
 	      c1 = new Controler();
-	      m = new Model();
+	      m1 = new Model();
 	}
 
 	@AfterEach
@@ -36,7 +36,7 @@ class First_test {
 	@SuppressWarnings("deprecation")
 	@Test
 	void test() {
-	assertEquals(5,m.add(3,2));
+	assertEquals(5,m1.add(3,2));
 	}
 
 }
