@@ -36,7 +36,7 @@ public class Controler implements ActionListener {
 	
 	
 		public double work(String[] arr, Model m , view v){
-			 double n1=0,n2=0,res=0;
+			 double n1=0,n2=0;
 			try {
 				
 			if(!(arr[2].equals("="))) {n2= Double.parseDouble(arr[2]);}
