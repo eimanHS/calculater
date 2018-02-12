@@ -9,6 +9,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class Seconnd_test {
+	Controler c1;
+	view v;
+	Model m;
+	String[] ar= {"2","+","5","="}; 
 
 //	@BeforeAll
 //	static void setUpBeforeClass() throws Exception {
@@ -20,6 +24,9 @@ class Seconnd_test {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		c1 =new Controler();
+		m= new Model();
+		v= new view();
 	}
 
 	@AfterEach
@@ -28,7 +35,7 @@ class Seconnd_test {
 
 	@Test
 	void test() {
-		fail("Not yet implemented");
+		assertEquals(7,c1.work(ar,m,v));
 	}
 
 }
