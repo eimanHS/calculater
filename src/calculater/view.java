@@ -77,7 +77,7 @@ public class view extends javax.swing.JFrame  {
         jButton4.setText(" = ");
         jButton4.addActionListener(c);
 
-        jButton5.setText(" × ");
+        jButton5.setText(" * ");
         jButton5.addActionListener(c);
 
         jButton6.setText("8");
@@ -95,7 +95,7 @@ public class view extends javax.swing.JFrame  {
         jButton10.setText("6");
         jButton10.addActionListener(c);
         
-        jButton11.setText(" ÷ ");
+        jButton11.setText(" / ");
         jButton11.addActionListener(c);
         
         jButton12.setText("5");

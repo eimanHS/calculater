@@ -56,10 +56,10 @@ public class Controler implements ActionListener {
 			 else if (arr[1].equals("-")) {
 					n1= m.sub(n1, n2);
 				 }
-			 else if (arr[1].equals("×")) {
+			 else if (arr[1].equals("*")) {
 					n1= m.mul(n1, n2);
 				 }
-			 else if (arr[1].equals("÷")) {
+			 else if (arr[1].equals("/")) {
 					n1= m.div(n1, n2);	
 				 }
 			 else if (arr[1].equals("%")) {
