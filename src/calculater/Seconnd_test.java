@@ -34,8 +34,30 @@ class Seconnd_test {
 	}
 
 	@Test
-	void test() {
-		assertEquals(7,c1.work(ar,m,v));
+	public void add_test() {
+		assertEquals(7,c1.work(ar,m,v),0);
+	}
+	@Test
+	public void divOnZ_test(){
+		ar[0]="2";
+		ar[1]="/";
+		ar[2]="0";
+		ar[3]="=";
+		assertEquals(1,c1.work(ar,m,v),0);}
+	@Test
+	public void moodOnZ_test(){
+		ar[0]="2";
+		ar[1]="%";
+		ar[2]="0";
+		ar[3]="=";
+		assertEquals(1,c1.work(ar,m,v),0);}
+	@Test
+	public void sqrOfNeq_test(){
+		ar[0]="-8";
+		ar[1]="s";
+		ar[2]="=";
+		assertEquals(1,c1.work(ar,m,v),0);
+		
 	}
 
 }
